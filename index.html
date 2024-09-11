@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Profile - Keyboard Only</title>
+
+    <style>
+        /* General Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5efef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            background-color: #575552;
+            padding: 30px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        /* Profile Picture */
+        
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        /* Profile Info */
+        
+        .card h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .card p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .location {
+            color: #008cff;
+            /* Bright Green */
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .bio {
+            color: #ccc;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        /* Social Links */
+        
+        .social-buttons a {
+            display: block;
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            pointer-events: none;
+            /* Disable mouse interaction */
+        }
+        /* Hover and Focus Styles */
+        
+        .social-buttons a:hover,
+        .social-buttons a:focus {
+            background-color: #f3eeee;
+        }
+        /* Focus Styles for Keyboard Navigation */
+        
+        .social-buttons a:focus {
+            outline: 3px solid #008cff;
+            background-color: #6e6565;
+        }
+        /* Focus only visible for keyboard navigation */
+        
+        .social-buttons a:focus-visible {
+            outline: 3px solid #008cff;
+        }
+        /* Attribution */
+        
+        .attribution {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #888;
+        }
+        
+        .attribution a {
+            color: #008cff;
+        }
+        
+        @media (max-width: 500px) {
+            .card {
+                padding: 20px;
+            }
+            .card h1 {
+                font-size: 20px;
+            }
+            .social-buttons a {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="14.jpg" alt="Profile Picture">
+            <h1>Saira Saeed</h1>
+            <p class="location">Lahore, Pakistan</p>
+            <p class="bio">"Front-end developer"</p>
+
+            <div class="social-buttons">
+                <a href="https://github.com/SairaSaeed824?tab=repositories" target="_blank" tabindex="0">GitHub</a>
+                <a href="https://www.frontendmentor.io/home" target="_blank" tabindex="0">Frontend Mentor</a>
+                <a href="https://www.linkedin.com/in/saira-saeed-60b539314/" target="_blank" tabindex="0">LinkedIn</a>
+                <a href="https://leetcode.com/u/SairaSaeed824/" target="_blank" tabindex="0">LeetCode</a>
+                <a href="https://www.instagram.com/saira_mehar824/" target="_blank" tabindex="0">Instagram</a>
+            </div>
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. Coded by <a href="#">SAIRA</a>.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
